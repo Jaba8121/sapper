@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Сапёр</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<div>
+    <div class="control-panel">
+        <label>
+            Размер доски:
+            <input type="number" id="boardSize" min="5" max="50" value="10">
+        </label>
+        <label>
+            Количество бомб:
+            <input type="number" id="mineCount" min="1" max="100" value="10">
+        </label>
+        <label>
+            ваше ник :
+            <input id="user_name">
+        </label>
+        <button id="startGame">Начать игру</button>
+    </div>
+
+    <dialog id="dialog">
+        <p id="dialogMessage"></p>
+        <button id="dialogButton">OK</button>
+    </dialog>
+    <div id="board" class="board">
+
+    </div>
+</div>
+<h2>топ 10 на сложности 10x10 с 10 минами
+</h2>
+<ol id = "topPlayers">
+</ol>
+
+<script src="skript.js"></script>
+</body>
+</html>
